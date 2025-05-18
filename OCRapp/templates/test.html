@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Welcome to Our Service</h1>
+            <p class="mt-2 text-lg">We provide innovative solutions for your everyday needs using cutting-edge AI
+                technologies.</p>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-6">Meet the Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Alice</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Bob</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Charlie</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="py-10 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-semibold text-center mb-6">Our Service</h2>
+            <form class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow space-y-4" id="service-form">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Upload File</label>
+                    <input type="file" accept="image/*" class="w-full p-2 border border-gray-300 rounded"
+                        id="file-input" />
+                </div>
+                <div id="image-preview" class="hidden mt-4 text-center">
+                    <img id="preview-img" src="#" alt="Preview" class="mx-auto max-w-xs rounded shadow fade-in" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Output Label</label>
+                    <input type="text" placeholder="Enter label" class="w-full p-2 border border-gray-300 rounded" />
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        1</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        2</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        3</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        4</button>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4">
+        <p>&copy; 2025 Our Service. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('file-input').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const previewContainer = document.getElementById('image-preview');
+            const previewImage = document.getElementById('preview-img');
+
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                    previewContainer.classList.remove('hidden');
+                    previewImage.classList.add('fade-in');
+                };
+                reader.readAsDataURL(file);
+            } else {
+                previewContainer.classList.add('hidden');
+                previewImage.src = '#';
+            }
+        });
+    </script>
+</body>
+
+</html>

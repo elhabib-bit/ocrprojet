@@ -1,0 +1,15 @@
+matplotlib>=1.5.1
+numpy>=1.10.4
+pandas>=0.17.1
+seaborn>=0.7.0
+tqdm
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tensorflow
+django
+pytesseract
+django-compressor
+tesseract

@@ -1,0 +1,4 @@
+./*.sqlite3
+./venv/
+./mysite/__pycache__/
+./OCRapp/__pycache__/

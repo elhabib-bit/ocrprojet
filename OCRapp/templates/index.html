@@ -1,0 +1,234 @@
+{% load compress %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <title>Image to text</title>
+
+</head>
+<body class="bg-neutral-200 " style="font-family:'Nunito Sans'">
+    <header class="sticky p-4 bg-black shadow-md">
+        <ul class="flex gap-4  text-white text-lg font-semibold ">
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Team Work</a></li>
+            <li><a href="">Image to Text</a></li>
+        </ul>
+    </header>
+    <div class="h-[600px] container mx-auto flex grid justify-center mt-3 content-center gap-3">
+        <p class="text-[3rem] font-bold text-center text-center tracking-tight text-base/12">Turn Images into Words with<br> Deep Learning</p>
+        <p class="text-xl px-12 text-center">Experience the power of intelligent text extraction, built for precision and performance.
+        Our advanced OCR engine combines Convolutional Neural Networks (CNNs) for robust visual feature detection with
+        Bidirectional LSTMs (BLSTMs) for context-aware text recognition. This state-of-the-art architecture allows us to
+        accurately extract text from scanned documents, photos, and natural scenes <br><p class="text-center text-blue-500 font-extrabold text-3xl" id="colored-text">All powered by modern AI.</p></p>
+    </div>
+    <div class="container mx-auto">
+        <div class="flex">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eo
+                    s accusantium consequatur rem nam quaerat adipisci! Laborum, nih
+                    il! Quasi quibusdam praesentium maxime obcaecati consequuntur? Pra
+                    esentium eligendi tenetur quaerat doloribus dolores id.
+                </p>
+            </div>
+            <div>
+                <div class="h-[80px] w-[110px] bg-black"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto ">
+        <p class="text-[2.3rem] font-bold text-center">Implemented with</p>
+        <div class="flex gap-5 justify-between p-7 h-[250]">
+            <i class="devicon-html5-plain-wordmark colored text-[7rem]"></i>
+            <i class="devicon-css3-plain-wordmark colored text-[7rem]"></i>
+            <i class="devicon-python-plain-wordmark colored text-[7rem]"></i>
+            <i class="devicon-pytorch-plain-wordmark colored text-[7rem]"></i>
+            <i class="devicon-django-plain-wordmark colored text-[7rem]"></i>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <p class="text-[2.3rem] font-bold text-center">Meet Our Team</p>
+        <div class="flex flex-wrap  justify-center mt-5">
+            <!-- el habib chama-->
+            <div class="w-full md:w-6/12 lg:w-2/12 lg:mb-0 mb-30">
+                <div class="px-6 h-full">
+                    <img alt="..." src="https://avatars.githubusercontent.com/u/69660981?v=4"
+                        class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                    <div class="pt-6 text-center flex flex-col align-between">
+                        <h5 class="text-xl font-bold">EL HABIB<br> CHAMA</h5>
+                        <div class="mt-4 flex justify-center">
+                            <button class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                                type="button">
+                                <a href="https://github.com/elhabib-bit" target="_blank" rel="noopener noreferrer"
+                                    class="flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kamerone Saad-->
+            <div class="w-full md:w-6/12 lg:w-2/12 lg:mb-0 mb-30">
+                <div class="px-6 h-full">
+                    <img alt="..." src="https://avatars.githubusercontent.com/u/62801522?v=4"
+                        class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                    <div class="pt-6 text-center flex flex-col align-between">
+                        <h5 class="text-xl font-bold">Kameroun<br> Saad </h5>
+                        <div class="mt-4 flex justify-center">
+                            <button class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                                type="button">
+                                <a href="https://github.com/Badr-Bouymejjane" target="_blank" rel="noopener noreferrer"
+                                    class="flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ISLAM-->
+            <div class="w-full md:w-6/12 lg:w-2/12 lg:mb-0 mb-30">
+                <div class="px-6 h-full">
+                    <img alt="..." src="https://avatars.githubusercontent.com/u/163757687?v=4"
+                        class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+                    <div class="pt-6 text-center flex flex-col align-between">
+                        <h5 class="text-xl font-bold">Islam<br></h5>
+                        <div class="mt-4 flex justify-center">
+                            <button class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                                type="button">
+                                <a href="https://github.com/TatsuyaSoft" target="_blank" rel="noopener noreferrer"
+                                    class="flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    
+    <div class="flex gap-2 container mx-auto center h-[500px] content-center">
+        <div class="basis-1/3 content-center">
+            <form method="post" id="form" enctype="multipart/form-data" class="m-2 p-3 border-2 border-black border-dashed">
+                {% csrf_token %}
+                <div class="flex grid justify-center gap-2 place-items-center" id="area_img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-up-icon lucide-image-up justify-self-center">
+                        <path d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21" />
+                        <path d="m14 19.5 3-3 3 3" />
+                        <path d="M17 22v-5.5" />
+                        <circle cx="9" cy="9" r="2" />
+                    </svg>
+                    <input
+                        class="text-center"
+                        type="file"
+                        
+                        name="image"
+                        id="input_file"
+                        hidden
+                        
+                        
+                    />
+                    <button
+                        type="submit"
+                        class="px-2 my-1 border-1 text-lg font-semibold bg-blue-500 text-white rounded-sm"
+                        id="sender"
+                        
+                    >
+                        Submit
+                    </button>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="basis-2/3 content-center">
+            <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow space-y-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Output Label</label>
+                    
+                    <textarea type="text" readonly  class="w-full p-2 border border-gray-300 rounded" maxlength="4">{{ text }}</textarea>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        1</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        2</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        3</button>
+                    <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Feature
+                        4</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-blue-600 text-white text-center p-4">
+        <p>&copy; 2025 Our Service. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("input_file").addEventListener("change",(this,event)=>{
+        console.log('dragged')
+       
+    })
+</script>
+<!-- <script>
+    function send()
+    {
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        console.log("done")
+
+        const API_URL = "http://127.0.0.1:8000/converter/";
+
+        const request = new Request(
+            API_URL,
+            { headers: { 'X-CSRFToken': csrftoken } }
+        );
+
+        return fetch(request, {
+            method: 'POST',
+            mode: 'same-origin',
+            body: JSON.stringify()
+        })
+            .then(response => response.json())
+            .then(response => {
+                data = response['time'];
+                return data;
+            });
+    }
+    document.getElementById("sender").addEventListener("click",()=>{send()})
+</script> -->
+
+</html>
